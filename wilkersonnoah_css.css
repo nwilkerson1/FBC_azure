@@ -1,0 +1,426 @@
+@charset "UTF-8";
+
+/* body */
+html{
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+body{
+    background-color: #FFFDEE;
+    margin: 0;
+}
+
+h2,h1 {
+    color:#0F08D8;
+}
+/*  nav */
+li.logo {
+    margin-right: auto;
+}
+
+.web_nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    background-color: #a6a8ab;
+    padding: .3em;
+    margin: 0;
+
+}
+.web_nav a {
+    color: #0F08D8;
+    padding:60px 40px;
+    text-decoration: none;
+}
+
+/* hero image  */     
+
+.hero_image {
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(./Images/IMG_5814.jpg);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero_header {
+    text-align: center;
+    color:white;
+    text-shadow: .05em .05em .1em black;
+    font-size: 3em;
+    margin: 0px;
+}
+
+
+/* grid for index page */
+
+
+#grid {
+    display: grid;
+    font-size: x-large;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'title1 classes'
+    'video video'
+    'paypal facebook '
+    'footer footer'
+    ;
+}
+
+.title1 {
+    grid-area: title1;
+    font-size: 45px;
+    text-align:center;
+    background-image: url(./Images/bible-1948778_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 470px;
+}
+.classes {
+    grid-area: classes;
+    font-size: 50px;
+    text-align: center;
+    list-style: none;
+}
+.video {
+    grid-area: video;
+    font-size: 45px;
+    text-align: center;
+    font-style: italic;
+}
+
+
+.paypal {
+    grid-area: paypal;
+    font-size: 30px;
+    text-align: center;
+    
+    
+}
+.facebook{
+    grid-area: facebook;
+    font-size: 30px;
+    text-align: center;
+    padding: 3em;
+}
+.footer {
+    grid-area: footer;
+    font-size: 45px;
+    text-align: center;
+    font-style: italic;
+}
+
+
+
+
+
+/* grid for staff page */
+
+#FBC {
+    display: grid;
+    font-size: x-large;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    'title title'
+    'about services'
+    'staff staff'
+    'staff1 staff2'
+    'staff3 staff3'
+    ;
+}
+.title {
+    grid-area: title;
+    object-fit: contain;
+    text-align:center;
+}
+.about {
+    grid-area: about;
+    object-fit: contain;
+    text-align: center;
+}
+.services {
+    grid-area: services;
+    object-fit: contain;
+    text-align: center;
+}
+.staff {
+    grid-area: staff;
+    object-fit: contain;
+    text-align: center;
+}
+
+.staff1 {
+    grid-area: staff1;
+    object-fit: contain;
+    text-align: center;
+}
+.staff2 {
+    grid-area: staff2;
+    object-fit: contain;
+    text-align: center;
+}
+.staff3{
+    grid-area: staff3;
+    object-fit: contain;
+    text-align: center;
+}
+
+/* grid for ministries */
+#classes {
+    display: grid;
+    font-size: x-large;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'class1 class2 class3'
+    ;
+}
+.class1 {
+    grid-area: class1;
+    object-fit: contain;
+    text-align: center;
+}
+.class2 {
+    grid-area: class2;
+    object-fit: contain;
+    text-align: center;
+}
+.class3 {
+    grid-area: class3;
+    object-fit: contain;
+    text-align: center;
+}
+
+/* gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*                 calendar               */
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+.october{
+    text-align: center;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+
+.days li .active {
+    padding: 5px;
+    background:#0F08D8;
+    color: white !important
+}
+
+@media screen and (max-width: 800px) {
+    .web_nav {
+    
+        align-items: center;
+        list-style: none;
+        background-color: #a6a8ab;
+        padding: .3em;
+        margin: 0;
+    }
+    .web_nav a {
+        color: #0F08D8;
+        padding:40px 20px;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    
+   #grid {
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: repeat(6, auto);
+       grid-template-areas: 
+       'title1'
+       'classes'
+       'video'
+       'title3'
+       'paypal'
+       'footer'
+       ;
+       justify-items: center;
+       margin: 0 auto;
+       max-width: 1200px;
+    }
+    .title1 {
+        grid-area: title1;
+        font-size: 30px;
+        text-align:center;
+        background-image: none;
+    }
+    .classes {
+        grid-area: classes;
+        font-size: 30px;
+        text-align: center;
+        list-style: none;
+    }
+    .video {
+        grid-area: video;
+        font-size: 45px;
+        text-align: center;
+        font-style: italic;
+    }
+    .title3 {
+        grid-area: title3;
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .paypal {
+        grid-area: paypal;
+        font-size: 30px;
+        text-align: center;
+    }
+    .footer {
+        grid-area: footer;
+        font-size: 25px;
+        text-align: center;
+        font-style: italic;
+    }
+}
+    
+@media screen and (max-width: 800px) {
+    #FBC {
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: repeat(7, auto);
+        grid-template-areas: 
+        'title'
+        'about'
+        'services'
+        'staff'
+        'staff1'
+        'staff2'
+        'staff3'
+        ;
+        justify-items: center;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+    .title {
+        grid-area: title;
+        font-size: 25px;
+        text-align:center;
+        
+    }
+    .about {
+        grid-area: about;
+        font-size: 25px;
+        text-align: center;
+        
+    }
+    .services {
+        grid-area: services;
+        font-size: 20px;
+        text-align: center;
+        
+    }
+    .staff {
+        grid-area: staff;
+        object-fit: contain;
+        text-align: center;
+        
+    }
+    
+    .staff1 {
+        grid-area: staff1;
+        font-size: 20px;
+        object-fit: contain;
+        text-align: center;
+        
+    }
+    .staff2 {
+        grid-area: staff2;
+        font-size: 20px;
+        object-fit: contain;
+        text-align: center;
+        
+    }
+    .staff3{
+        grid-area: staff3;
+        font-size: 20px;
+        object-fit: contain;
+        text-align: center;
+        
+    }
+    .img {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #classes {
+        display: grid;
+        font-size: x-large;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        'class1'
+        'class2'
+        'class3'
+        ;
+        justify-items: center;
+        margin: 0 auto;
+        max-width: 1200px; 
+    }
+    .class1 {
+        grid-area: class1;
+        object-fit: contain;
+        text-align: center;
+    }
+    .class2 {
+        grid-area: class2;
+        object-fit: contain;
+        text-align: center;
+    }
+    .class3 {
+        grid-area: class3;
+        object-fit: contain;
+        text-align: center;
+    }    
+}
+
+
+        
+
+
+
+   
+   

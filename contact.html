@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>@import url(wilkersonnoah_css.css);</style>
+    <style>
+    input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box;
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #0920eb;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #0c35e7;
+}
+
+.container {
+  border-radius: 5px;
+  background-color:#FFFDEE;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+  <header>  
+    <!--nav bar-->
+    <nav>
+        <ul class="web_nav">
+            <li class="logo"><img src="./Images/FBCofMulberry_Logo2-01.png" width="300" alt="logo"></li>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./staff.html">ABOUT</a></li>
+            <li><a href="./ministries.html">MINISTRIES</a></li>
+            <li><a href="./gallery.html">VIDEOS/PICTURES</a></li>
+            <li><a href="./calendar.html">CALENDAR</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+            <li><a href="https://Instagram.com"><img src="./Images/instagram.png" width="30" alt="Instagram logo"></a></li>
+            <li><a href="https://Facebook.com"><img src="./Images/facebook.png" width="30" alt="Facebook logo"></a></li>
+            <li><a href="https://Paypal.com"><img src="./Images/paypal.png"  width="30" alt="Paypal logo"></a></li>
+        </ul>
+    </nav>
+    <div class="hero_image">
+        <h1 class="hero_header">Welcome to First Baptist Church of Mulberry!</h1>
+    </div>
+    </header>
+
+    <h1>Contact</h1>
+    <p>Call our church office at 863-425-1174</p>
+    <p>You can mail us at 300 NE 1st Ave. PO Box 251 Mulberry, FL 33860</p>
+    <p>Don't forget to find us on <a href="https://Facebook.com">Facebook</a> and Like our page</p>
+    <div class="container">
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+</body>
+</html>
